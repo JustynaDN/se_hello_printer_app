@@ -12,5 +12,5 @@ script:
   - make docker_push
 deploy:
   provider: heroku
-  app: <dry-hollows-58865>
+  app: dry-hollows-58865
   api_key: ${HEROKU_API_KEY}
