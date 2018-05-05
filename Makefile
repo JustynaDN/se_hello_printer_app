@@ -13,7 +13,7 @@ run:
 	python main.py
 
 test:
-	PYTHONPATH=. py.test
+	PYTHONPATH=. py.test --ignore=test_ui
 
 test_smoke:
 		curl --fail http://127.0.0.1:5000
