@@ -10,10 +10,16 @@ script:
   - make lint
   - make docker_build
   - make docker_run
-  - python test-api/api_test.py
+  - sleep 2; python test-api/api_test.py
+after_success:
   - make docker_push
 
-deploy:
-  provider: heroku
-  app: ancient-sea-62343
-  api_key: ${HEROKU_API_KEY}
+
+
+
+
+# Dla przypomnienia
+# komendy git:
+git add <PLIK>
+git commit -m "WIADOMOSC DO COMMITU"
+git push origin master
