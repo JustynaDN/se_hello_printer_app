@@ -13,13 +13,3 @@ script:
   - sleep 2; python test-api/api_test.py
 after_success:
   - make docker_push
-
-
-
-
-
-# Dla przypomnienia
-# komendy git:
-git add <PLIK>
-git commit -m "WIADOMOSC DO COMMITU"
-git push origin master
